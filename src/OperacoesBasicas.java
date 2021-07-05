@@ -1,46 +1,43 @@
-public class CalculadoraOperacoesBasicas {
+public class OperacoesBasicas {
 
     private double num1;
     private double num2;
     private int operador;
 
-    public CalculadoraOperacoesBasicas(double num1, double num2, int operador) {
+    public OperacoesBasicas(double num1, double num2, int operador) {
         this.num1 = num1;
         this.num2 = num2;
         this.operador = operador;
 
         switch (operador) {
             case 1:
-                CalculadoraOperacoesBasicas.somar(num1, num2);
+                OperacoesBasicas.somar(num1, num2);
                 break;
             case 2:
-                CalculadoraOperacoesBasicas.subtrair(num1, num2);
+                OperacoesBasicas.subtrair(num1, num2);
                 break;
             case 3:
-                CalculadoraOperacoesBasicas.multiplicar(num1, num2);
+                OperacoesBasicas.multiplicar(num1, num2);
                 break;
             case 4:
-                CalculadoraOperacoesBasicas.dividir(num1, num2);
-                break;
-            case 0:
-                System.out.println("Saindo da Calculadora..");
+                OperacoesBasicas.dividir(num1, num2);
                 break;
         }
     }
 
     public static void somar(double num1, double num2){
         double total = num1 + num2;
-        System.out.println("O valor da soma é: " + total);
+        System.out.println("O resultado da soma é: " + total);
     }
 
     public static void subtrair(double num1, double num2){
         double total = num1 - num2;
-        System.out.println("O valor da subtração é: " + total);
+        System.out.println("O resultado da subtração é: " + total);
     }
 
     public static void multiplicar(double num1, double num2){
         double total = num1 * num2;
-        System.out.println("O valor da multiplicação é: " + total);
+        System.out.println("O resultado da multiplicação é: " + total);
     }
 
     public static void dividir(double num1, double num2){
@@ -50,12 +47,11 @@ public class CalculadoraOperacoesBasicas {
             double total = num1/num2;
             System.out.println("O resultado da divisão é: " + total);
         }
-
     }
 
     @Override
     public String toString() {
-        return "CalculadoraOperacoesBasicas{" +
+        return "OperacoesBasicas{" +
                 "Número 1=" + num1 +
                 ", Número 2=" + num2 +
                 ", operador='" + operador + '\'' +
