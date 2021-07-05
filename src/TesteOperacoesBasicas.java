@@ -13,28 +13,22 @@ public class TesteOperacoesBasicas {
                 "0 - sair");
         int operador = leitor.nextInt();
 
-        System.out.println("Informe o primeiro valor:");
-        double num1 = leitor.nextDouble();
+        if (operador == 0){
+            System.out.println("Saindo da Calculadora..");
+        } else if(operador > 4){
+            System.out.println("Informe uma operação existente");
+        } else{
+            System.out.println("Informe o primeiro valor:");
+            double num1 = leitor.nextDouble();
 
-        System.out.println("Informe o segundo valor:");
-        double num2 = leitor.nextDouble();
+            System.out.println("Informe o segundo valor:");
+            double num2 = leitor.nextDouble();
 
-        CalculadoraOperacoesBasicas calculo1 = new CalculadoraOperacoesBasicas(num1, num2, operador);
+            OperacoesBasicas calculo1 = new OperacoesBasicas(num1, num2, operador);
 
-        System.out.println(calculo1);
+            //System.out.println(calculo1);
+        }
 
         leitor.close();
-
-
-
-
-
-
-
-
-
-
-
     }
-
 }
