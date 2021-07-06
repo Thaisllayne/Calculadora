@@ -6,7 +6,7 @@ import br.com.fcamara.conversor.modelo.ConversorTemperatura;
 
 import java.util.Scanner;
 
-public class TesteConversorTemperatura {
+public class TesteConversor {
     public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
