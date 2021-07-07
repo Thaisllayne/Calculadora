@@ -42,13 +42,29 @@ public class TesteConversor {
                 break;
 
             case 2:
-                ConversorMoeda conversorMoeda = new ConversorMoeda();
-                System.out.println("entrei no conversor de moeda");
+                System.out.println("Informe a moeda atual: \n" +
+                        "1 - Dólar americano \n" +
+                        "2 - Euro \n" +
+                        "3 - Real");
+                int moedaAtual = leitor.nextInt();
+
+                System.out.println("Informe o valor atual:");
+                double valorMoedaAtual = leitor.nextDouble();
+
+                System.out.println("Informe para qual moeda será convertida: \n" +
+                        "1 - Dólar americano \n" +
+                        "2 - Euro \n" +
+                        "3 - Real");
+                int moedaConvertida = leitor.nextInt();
+
+                ConversorMoeda conversorMoeda = new ConversorMoeda(valorMoedaAtual, moedaAtual, moedaConvertida);
+                System.out.println(conversorMoeda);
                 break;
 
             case 3:
                 ConversorComprimento conversorComprimento = new ConversorComprimento();
                 System.out.println("entrei no conversor de comprimento");
+                break;
 
             default:
                 System.out.println("Por favor, informe um valor entre 1 e 3");
