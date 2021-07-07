@@ -70,10 +70,9 @@ public class ConversorMoeda {
 
     @Override
     public String toString() {
-        return "ConversorMoeda{" +
-                "valorMoedaAtual=" + valorMoedaAtual +
-                ", moedaAtual=" + moedaAtual +
-                ", moedaConvertida=" + moedaConvertida +
+        return "ConversorMoeda: O valor é de " + valorMoedaAtual +
+                ", moedaAtual = " + moedaAtual +
+                ", moedaConvertida = " + moedaConvertida +
                 '}';
     }
 }
