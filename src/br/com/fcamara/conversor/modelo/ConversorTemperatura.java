@@ -11,14 +11,11 @@ public class ConversorTemperatura {
         this.escalaTermometricaAtual = escalaTermometricaAtual;
         this.escalaTermometricaConvertida = escalaTermometricaConvertida;
 
-        // fazer validações???
-
         if(escalaTermometricaAtual == escalaTermometricaConvertida){
             System.out.println("As unidades termométricas são iguais!");
         } else{
             ConversorT();
         }
-
     }
 
     public void ConversorT() {
