@@ -21,7 +21,7 @@ public class ConversorTemperatura {
 
     }
 
-    private void ConversorT() {
+    public void ConversorT() {
         double celsius = 0;
         double fahrenheit = 0;
         double kelvin = 0;
