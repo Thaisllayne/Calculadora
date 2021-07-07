@@ -62,7 +62,24 @@ public class TesteConversor {
                 break;
 
             case 3:
-                ConversorComprimento conversorComprimento = new ConversorComprimento();
+
+                System.out.println("Informe a unidade de medida atual \n" +
+                        "1 - Quilômetro \n" +
+                        "2 - Metro \n" +
+                        "3 - Centímetro");
+                int unidadeDeMedidaAtual = leitor.nextInt();
+
+                System.out.println("Informe o valor: ");
+                double valorMedidaAtual = leitor.nextDouble();
+
+                System.out.println("Informe para qual unidade de medida será convertida: \n" +
+                        "1 - Quilômetro \n" +
+                        "2 - Metro \n" +
+                        "3 - Centímetro");
+                int unidadeDeMedidaConvertida = leitor.nextInt();
+
+
+                ConversorComprimento conversorComprimento = new ConversorComprimento(valorMedidaAtual, unidadeDeMedidaAtual, unidadeDeMedidaConvertida);
                 System.out.println("entrei no conversor de comprimento");
                 break;
 
