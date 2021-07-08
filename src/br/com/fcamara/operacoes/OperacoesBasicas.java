@@ -1,3 +1,5 @@
+package br.com.fcamara.operacoes;
+
 public class OperacoesBasicas {
 
     private double num1;

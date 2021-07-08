@@ -1,3 +1,5 @@
+package br.com.fcamara.operacoes;
+
 import java.util.Scanner;
 
 public class TesteOperacoesBasicas {
