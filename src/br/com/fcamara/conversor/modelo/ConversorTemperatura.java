@@ -76,10 +76,9 @@ public class ConversorTemperatura {
 
     @Override
     public String toString() {
-        return "ConversorTemperatura{" +
-                "temperaturaAtual=" + temperaturaAtual +
-                ", escalaTermometricaAtual=" + escalaTermometricaAtual +
-                ", escalaTermometricaConvertida=" + escalaTermometricaConvertida +
-                '}';
+        return "Conversor de Temperatura: \n" +
+                "temperatura atual: " + temperaturaAtual +
+                ", escala termométrica atual: " + escalaTermometricaAtual +
+                ", escala termométrica convertida: " + escalaTermometricaConvertida;
     }
 }

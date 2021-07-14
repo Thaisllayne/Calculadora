@@ -77,6 +77,7 @@ public class InterfaceUsuario {
 
         ConversorComprimento conversorComprimento = new ConversorComprimento(valorMedidaAtual,
                 unidadeDeMedidaAtual, unidadeDeMedidaConvertida);
+        System.out.println(conversorComprimento);
 
         return valorMedidaAtual;
     }

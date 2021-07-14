@@ -65,12 +65,13 @@ public class ConversorComprimento {
                 break;
         }
 
-
-
-
-
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Conversor de comprimento: \n" +
+                "valor da medida atual: " + valorMedidaAtual +
+                ", unidade da medida atual: " + unidadeDeMedidaAtual +
+                ", unidade da medida convertida: " + unidadeDeMedidaConvertida;
+    }
 }
