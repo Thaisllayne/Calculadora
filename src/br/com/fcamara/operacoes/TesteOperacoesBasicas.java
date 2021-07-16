@@ -1,5 +1,7 @@
 package br.com.fcamara.operacoes;
 
+import javax.swing.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TesteOperacoesBasicas {
@@ -11,24 +13,24 @@ public class TesteOperacoesBasicas {
                 "1 - soma \n" +
                 "2 - subtração \n" +
                 "3 - multiplicação \n" +
-                "4 - divisão \n" +
-                "0 - sair");
-        int operador = leitor.nextInt();
+                "4 - divisão");
 
-        if (operador == 0){
-            System.out.println("Saindo da Calculadora..");
-        } else if(operador > 4){
-            System.out.println("Informe uma operação existente");
-        } else{
+        String operador = leitor.nextLine();
+        OperacoesBasicas.soNumeros(operador);
+
+        try{
             System.out.println("Informe o primeiro valor:");
-            double num1 = leitor.nextDouble();
+            Double num1 = leitor.nextDouble();
 
             System.out.println("Informe o segundo valor:");
-            double num2 = leitor.nextDouble();
+            Double num2 = leitor.nextDouble();
 
-            OperacoesBasicas calculo1 = new OperacoesBasicas(num1, num2, operador);
 
-            //System.out.println(calculo1);
+            OperacoesBasicas calculo1 = new OperacoesBasicas(operador, num1, num2);
+            System.out.println(calculo1);
+
+        } catch (InputMismatchException exception){
+            System.out.println("Para fazer os cálculos, somente com números.");
         }
 
         leitor.close();

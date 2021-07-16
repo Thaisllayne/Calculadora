@@ -4,26 +4,31 @@ public class OperacoesBasicas {
 
     private double num1;
     private double num2;
-    private int operador;
+    private String operador;
 
-    public OperacoesBasicas(double num1, double num2, int operador) {
-        this.num1 = num1;
-        this.num2 = num2;
+    public OperacoesBasicas(String operador, double num1, double num2) {
         this.operador = operador;
 
         switch (operador) {
-            case 1:
+            case "1":
                 OperacoesBasicas.somar(num1, num2);
                 break;
-            case 2:
+            case "2":
                 OperacoesBasicas.subtrair(num1, num2);
                 break;
-            case 3:
+            case "3":
                 OperacoesBasicas.multiplicar(num1, num2);
                 break;
-            case 4:
+            case "4":
                 OperacoesBasicas.dividir(num1, num2);
                 break;
+        }
+    }
+
+    public static void soNumeros(String operador){
+        if (!operador.matches("[1-4]")){
+            System.out.println("Por favor, informe uma opção válida");
+            System.exit(1);
         }
     }
 
@@ -50,6 +55,7 @@ public class OperacoesBasicas {
             System.out.println("O resultado da divisão é: " + total);
         }
     }
+
 
     @Override
     public String toString() {
