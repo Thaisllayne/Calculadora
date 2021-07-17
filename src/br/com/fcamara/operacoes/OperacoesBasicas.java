@@ -12,15 +12,19 @@ public class OperacoesBasicas {
         switch (operador) {
             case "1":
                 OperacoesBasicas.somar(num1, num2);
+                System.out.println("O resultado da soma é: " + somar(num1, num2));
                 break;
             case "2":
                 OperacoesBasicas.subtrair(num1, num2);
+                System.out.println("O resultado da subtração é: " + subtrair(num1, num2));
                 break;
             case "3":
                 OperacoesBasicas.multiplicar(num1, num2);
+                System.out.println("O resultado da multiplicação é: " + multiplicar(num1, num2));
                 break;
             case "4":
                 OperacoesBasicas.dividir(num1, num2);
+                System.out.println("O resultado da divisão é: " + dividir(num1, num2));
                 break;
         }
     }
@@ -32,37 +36,30 @@ public class OperacoesBasicas {
         }
     }
 
-    public static void somar(double num1, double num2){
-        double total = num1 + num2;
-        System.out.println("O resultado da soma é: " + total);
+    public static double somar(double num1, double num2){
+        return num1 + num2;
     }
 
-    public static void subtrair(double num1, double num2){
-        double total = num1 - num2;
-        System.out.println("O resultado da subtração é: " + total);
+    public static double subtrair(double num1, double num2){
+        return num1 - num2;
     }
 
-    public static void multiplicar(double num1, double num2){
-        double total = num1 * num2;
-        System.out.println("O resultado da multiplicação é: " + total);
+    public static double multiplicar(double num1, double num2){
+        return num1 * num2;
     }
 
-    public static void dividir(double num1, double num2){
+    public static double dividir(double num1, double num2){
         if (num2==0){
             throw new ArithmeticException("Impossível fazer uma divisão por 0");
         } else{
-            double total = num1/num2;
-            System.out.println("O resultado da divisão é: " + total);
+            return num1/num2;
         }
     }
 
-
     @Override
     public String toString() {
-        return "OperacoesBasicas{" +
-                "Número 1=" + num1 +
-                ", Número 2=" + num2 +
-                ", operador='" + operador + '\'' +
-                '}';
+        return "OperacoesBasicas: \n" +
+                "Número 1: " + num1 +
+                ", Número 2: " + num2;
     }
 }

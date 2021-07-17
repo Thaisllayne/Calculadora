@@ -25,9 +25,8 @@ public class TesteOperacoesBasicas {
             System.out.println("Informe o segundo valor:");
             Double num2 = leitor.nextDouble();
 
-
             OperacoesBasicas calculo1 = new OperacoesBasicas(operador, num1, num2);
-            System.out.println(calculo1);
+            // System.out.println(calculo1);
 
         } catch (InputMismatchException exception){
             System.out.println("Para fazer os cálculos, somente com números.");
