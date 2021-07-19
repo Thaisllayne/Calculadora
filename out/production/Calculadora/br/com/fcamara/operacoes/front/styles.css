@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+
+.principal{
+  width: 35vw;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+tr{
+  background-color: red;
+} 
+td{
+  background-color: pink;
+}

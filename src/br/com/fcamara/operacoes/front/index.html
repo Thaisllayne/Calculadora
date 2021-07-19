@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <main class="principal">
+    <table id="tabela">
+      <tr id="linha">
+        <td colspan="5" class="tela">TELA</td>
+      </tr>
+      <tr id="linha">
+        <td class="numero">7</td>
+        <td class="numero">8</td>
+        <td class="numero">9</td>
+        <td class="simbolo"> 
+          <img src="images/simbolo-de-divisao.png" alt="">
+        </td>
+        <td>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+          </svg>
+        </td>
+      </tr>
+      <tr id="linha">
+        <td class="numero">4</td>
+        <td class="numero">5</td>
+        <td class="numero">6</td>
+        <td class="simbolo">X</td>
+        <td class="resultado" rowspan="4">
+          <img src="images/equal-symbol.png" alt="">
+        </td>
+      </tr>
+      <tr id="linha">
+        <td class="numero">1</td>
+        <td class="numero">2</td>
+        <td class="numero">3</td>
+        <td class="simbolo">
+          <img src="images/simbolo-de-subtracao.png" alt="">
+        </td>
+      </tr>
+      <tr id="linha">
+        <td class="numero">0</td>
+        <td class="numero">00</td>
+        <td class="ponto">.</td>
+        <td class="simbolo">
+          <img src="images/botao-de-simbolo-de-mais.png" alt="">
+        </td>
+      </tr>
+    </table>
+
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>

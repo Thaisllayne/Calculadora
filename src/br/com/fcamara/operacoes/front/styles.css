@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+
+.principal{
+  width: 20vw;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.tela{
+  background-color: gray;
+  color: rgb(78, 75, 75);
+}
+
+tr{
+  background-color: red;
+} 
+td{
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+}
